@@ -6,12 +6,15 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -34,6 +37,9 @@ public class kisten_view implements Initializable {
 
     @FXML
     private ToggleButton kisteAendern;
+
+    @FXML
+    private Label Meldung;
 
 
     @FXML
@@ -71,6 +77,9 @@ public class kisten_view implements Initializable {
                     stage.setTitle("Kiste ändern");
                     stage.setScene(scene);
                     stage.show();
+                    Meldung.setText("Ihre Kiste wurde erfolgreich geändert!");
+                    Meldung.setAlignment(Pos.CENTER);
+                    Meldung.setTextFill(Color.GREEN);
 
                 }
             });
@@ -135,6 +144,9 @@ public class kisten_view implements Initializable {
 
                     ObservableList<String> listeKisten = FXCollections.observableArrayList(kistenString);
                     myList.setItems(listeKisten);
+                    Meldung.setText("Ihre Kiste wurde erfolgreich gelöscht!");
+                    Meldung.setAlignment(Pos.CENTER);
+                    Meldung.setTextFill(Color.GREEN);
 
                 }
 

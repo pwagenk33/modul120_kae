@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -16,5 +17,6 @@
       <ListView fx:id="kistenInfo" layoutX="110.0" layoutY="103.0" prefHeight="261.0" prefWidth="226.0" />
       <ToggleButton fx:id="artikelUpdate" layoutX="381.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#artikelUpdate" prefHeight="46.0" prefWidth="119.0" style="-fx-font-weight: bold; -fx-background-color: lightyellow;" text="Artikel ändern" />
       <ToggleButton fx:id="artikelDelete" layoutX="381.0" layoutY="103.0" mnemonicParsing="false" onMouseClicked="#artikelDelete" prefHeight="46.0" prefWidth="119.0" style="-fx-background-color: #DF3A01; -fx-font-weight: bold;" text="Artikel löschen" />
+      <Label fx:id="Antwort" alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="18.0" prefWidth="532.0" style="-fx-font-weight: bold; -fx-alignment: center;" />
    </children>
 </AnchorPane>

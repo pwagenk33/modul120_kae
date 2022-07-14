@@ -6,12 +6,15 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,6 +36,9 @@ public class kistenInfo implements Initializable {
 
     @FXML
     private ListView<String> kistenInfo;
+
+    @FXML
+    private Label Antwort;
 
 
     @FXML
@@ -72,12 +78,14 @@ public class kistenInfo implements Initializable {
 
                     ObservableList<String> listeKisten = FXCollections.observableArrayList(kistenString);
                     kistenInfo.setItems(listeKisten);
+                    Antwort.setText("Der Gegenstand wurde erfolgreich gelöscht!");
+                    Antwort.setAlignment(Pos.CENTER);
+                    Antwort.setTextFill(Color.GREEN);
                 }
 
-
-
-
             });
+
+
         }
         else{
             artikelDelete.setStyle("-fx-background-color: #DF3A01");
@@ -133,9 +141,13 @@ public class kistenInfo implements Initializable {
                     stage.setTitle("Artikel ändern ");
                     stage.setScene(scene);
                     stage.show();
+                    Antwort.setText("Ihr Gegenstand wurde erfolgreich geupdated!");
+                    Antwort.setAlignment(Pos.CENTER);
+                    Antwort.setTextFill(Color.GREEN);
 
                 }
             });
+
         }
         else{
             artikelUpdate.setStyle("-fx-background-color: lightyellow");

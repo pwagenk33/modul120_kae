@@ -34,6 +34,6 @@
       <TextField fx:id="preis" layoutX="307.0" layoutY="296.0" />
       <Text layoutX="92.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artikelname" />
       <Text layoutX="307.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preis" />
-      <Label fx:id="antwort1" layoutX="203.0" layoutY="102.0" prefHeight="18.0" prefWidth="178.0" style="-fx-alignment: center; -fx-background-size: 13; -fx-font-weight: bold;" textFill="#27cc32" />
+      <Label fx:id="antwort1" alignment="CENTER" layoutX="1.0" layoutY="102.0" prefHeight="18.0" prefWidth="600.0" style="-fx-alignment: center; -fx-background-size: 13; -fx-font-weight: bold;" textFill="#27cc32" />
    </children>
 </AnchorPane>
