@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lagerverwaltungssystem.kisten_view">
+   <children>
+      <Text layoutX="181.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: bold;" text="Lagerverwaltung" />
+      <ListView fx:id="myList" layoutX="276.0" layoutY="106.0" prefHeight="248.0" prefWidth="248.0" />
+      <ToggleButton fx:id="toggleRemove" layoutX="45.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#removeChesto" prefHeight="40.0" prefWidth="154.0" style="-fx-background-color: #DF3A01;" text="Kiste löschen" />
+      <ToggleButton fx:id="kisteAendern" layoutX="45.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#kisteAendern" prefHeight="40.0" prefWidth="154.0" style="-fx-background-color: lightyellow; -fx-font-weight: bold;" text="Kiste bearbeiten" />
+   </children>
+</AnchorPane>

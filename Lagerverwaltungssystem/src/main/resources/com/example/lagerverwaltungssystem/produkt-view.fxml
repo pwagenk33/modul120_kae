@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lagerverwaltungssystem.produkt_view">
+   <children>
+      <Text layoutX="185.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Lagerverwaltung">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="controller" fitHeight="105.0" fitWidth="129.0" layoutX="215.0" layoutY="132.0" onMouseClicked="#clickOnController">
+         <image>
+            <Image url="@R.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="laptop" fitHeight="105.0" fitWidth="129.0" layoutX="406.0" layoutY="132.0" onMouseClicked="#clickOnLaptop">
+         <image>
+            <Image url="@laptop.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="handy" fitHeight="105.0" fitWidth="118.0" layoutX="39.0" layoutY="132.0" onMouseClicked="#clickOnHandy">
+         <image>
+            <Image url="@handy.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="artikelname" layoutX="92.0" layoutY="296.0" />
+      <TextField fx:id="preis" layoutX="307.0" layoutY="296.0" />
+      <Text layoutX="92.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artikelname" />
+      <Text layoutX="307.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preis" />
+      <Label fx:id="antwort1" layoutX="203.0" layoutY="102.0" prefHeight="18.0" prefWidth="178.0" style="-fx-alignment: center; -fx-background-size: 13; -fx-font-weight: bold;" textFill="#27cc32" />
+   </children>
+</AnchorPane>
